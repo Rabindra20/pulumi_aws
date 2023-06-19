@@ -1,0 +1,14 @@
+name: pulumi_aws
+runtime: yaml
+description: A minimal AWS Pulumi YAML program
+outputs:
+  # Export the name of the bucket
+  bucketName: ${my-bucket.id}
+resources:
+  # Create an AWS resource (S3 Bucket)
+  my-bucket:
+    type: aws:s3:Bucket
+
+# outputs:
+#   # ...
+#   bucketEndpoint: http://${my-bucket.websiteEndpoint}

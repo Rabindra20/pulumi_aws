@@ -1,0 +1,1 @@
+pulumi new aws-typescript --force
